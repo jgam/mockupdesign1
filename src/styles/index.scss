@@ -9,7 +9,7 @@ $service-background: #f4f5f7;
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 /* reset css */
@@ -22,7 +22,7 @@ a {
 button,
 input,
 textarea {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 16px;
 }
 
@@ -114,7 +114,7 @@ p {
 
 /* service css */
 .service-content {
-  padding: 80px 0;
+  padding: 80px 10px;
   background-color: $service-background;
   height: 500px;
 }
@@ -130,11 +130,41 @@ p {
   margin-bottom: 40px;
 }
 
+/* program css */
+.program-content {
+  padding: 80px 10px;
+}
+
+.program-title {
+  color: #009b4d;
+  font-size: 15px;
+}
+
+.program-rtitle {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.program-images .images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  border-radius: 10px;
+  background-color: green;
+}
+
 /* desktop */
 @media screen and (min-width: 768px) {
   p {
     font-size: 22px;
     line-height: 1.36363636;
+  }
+
+  h1 {
+    font-size: 30px;
   }
 
   .fill-button {
@@ -179,6 +209,20 @@ p {
 
   .service-box:last-child {
     width: 450px;
+  }
+
+  /* program desktop css */
+  .program-content {
+    text-align: center;
+  }
+
+  .program-title {
+    font-size: 22px;
+  }
+
+  .program-rtitle {
+    justify-content: center;
+    align-items: center;
   }
 }
 
